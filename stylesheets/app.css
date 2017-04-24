@@ -8630,25 +8630,21 @@ footer .social-connect li i {
   font-size: 2em;
   color: #b3a6d5;
   display: inline-block;
-  -moz-transition-property: all;
-  -o-transition-property: all;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.35s;
-  -o-transition-duration: 0.35s;
-  -webkit-transition-duration: 0.35s;
-  transition-duration: 0.35s;
-  -moz-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  -webkit-transition-timing-function: linear;
-  transition-timing-function: linear;
+  -moz-transition-duration: 0.75s;
+  -o-transition-duration: 0.75s;
+  -webkit-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+  -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -o-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 footer .social-connect li i:hover {
   color: #fff;
-  -moz-transform: translateY(-2px);
-  -ms-transform: translateY(-2px);
-  -webkit-transform: translateY(-2px);
-  transform: translateY(-2px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
   cursor: pointer;
 }
 footer .social-connect li:first-child {
