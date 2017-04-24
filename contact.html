@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="main-menu">
+    <header class="main-menu about-detail-header">
         <nav class="top-bar" data-topbar role="navigation">
             <ul class="title-area">
                 <li class="name">
@@ -27,100 +27,46 @@
             <section class="top-bar-section">
                 <!-- Right Nav Section -->
                 <ul class="right">
-                    <li class="active">
+                    <li class="">
                         <a href="index.html">Home</a>
                     </li>
                     <li class="">
                         <a href="#">About</a>
                     </li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="active">
+                      <a href="contact.html">Contact</a>
+                    </li>
                 </ul>
             </section>
         </nav>
     </header>
-    <div class="wrapper">
-        <div class="row inner">
-            <div class="large-6 columns ">
-                <div class="panel callout radius widget">
-                    <form>
-                        <div class="row">
-                            <div class="small-12 columns">
-                                <div class="row">
-                                    <div class="small-2 columns">
-                                        <label for="right-label" class="right inline">From</label>
-                                    </div>
-                                    <div class="small-5 columns">
-                                        <input type="text" id="right-label" placeholder="Inline Text Input">
-                                    </div>
-                                    <div class="large-5 columns">
-                                        <select>
-                                            <option value="husker">Husker</option>
-                                            <option value="starbuck">Starbuck</option>
-                                            <option value="hotdog">Hot Dog</option>
-                                            <option value="apollo">Apollo</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="small-12 columns">
-                                <div class="row">
-                                    <div class="small-2 columns">
-                                        <label for="right-label" class="right inline">To</label>
-                                    </div>
-                                    <div class="small-5 columns">
-                                        <input type="text" id="right-label" placeholder="Inline Text Input">
-                                    </div>
-                                    <div class="large-5 columns">
-                                        <select>
-                                            <option value="husker">Husker</option>
-                                            <option value="starbuck">Starbuck</option>
-                                            <option value="hotdog">Hot Dog</option>
-                                            <option value="apollo">Apollo</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="small-12 columns get-rates text-center">
-                            <a href="#" class="button small">
-                              Get Price
-                            </a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="large-6 columns widget-detail ">
-                <h2>
-          Online currency converter – calculate exchange rates
-        </h2>
-                <h3>
-Stay on top of foreign exchange rates, so you know when it's the best time to buy.
-</h3>
-            </div>
+    <div class="container-fluid innerAbout">
+        <div class="row">
+
         </div>
     </div>
     <main class="contact-wrap container-fluid">
       <div class="row">
         <div class="large-12 columns">
-          <h2>
+          <h4>
             Get in touch
-          </h2>
+          </h4>
           <p>
             Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.
-          </p>    
+          </p>
         </div>
         <div class="large-12 columns">
           <div class="large-12 columns">
             <form>
   <div class="row">
     <div class="medium-6 columns">
-      <label>Input Label
-        <input type="text" placeholder=".medium-6.columns">
+      <label><strong>Name</strong>
+        <input type="text" placeholder="loreum ipsum">
       </label>
     </div>
     <div class="medium-6 columns">
-      <label>Input Label
-        <input type="text" placeholder=".medium-6.columns">
+      <label><strong>Email address</strong>
+        <input type="text" placeholder="example@mail.com">
       </label>
     </div>
   </div>
@@ -129,30 +75,29 @@ Stay on top of foreign exchange rates, so you know when it's the best time to bu
           <div class="large-12 columns">
             <form>
   <div class="row">
-    <div class="medium-6 columns">
-      <label>Input Label
-        <input type="text" placeholder=".medium-6.columns">
+    <div class="large-12 columns">
+      <label><strong>Messege</strong>
+        <textarea placeholder="i have query ..."></textarea>
       </label>
     </div>
-    <div class="medium-6 columns">
-      <label>Input Label
-        <input type="text" placeholder=".medium-6.columns">
-      </label>
-    </div>
+
   </div>
 </form>
           </div>
+          <div class="large-12 columns">
+            <a href="#" class="button small">send message</a>
+          </div>
         </div>
-        
+
       </div>
       <div class="row">
         <div class="large-12 columns">
-          <h2>
+          <h4>
             Address
-          </h2>
+          </h4>
           <address>
             <span>
-            12345 
+            12345
             </span>
             <span>
               Somewhere Road #654
@@ -183,8 +128,8 @@ Stay on top of foreign exchange rates, so you know when it's the best time to bu
   <footer class="container-fluid">
 
       <div class="row">
-          
-          
+
+
           <div class="large-6 columns">
             <p>
               © Untitled. All rights reserved.
@@ -204,7 +149,7 @@ Stay on top of foreign exchange rates, so you know when it's the best time to bu
                 <i class="step fi-social-google-plus size-16">
                 </i>
                 </li>
-              </ul>  
+              </ul>
 
           </div>
       </div>
@@ -217,7 +162,7 @@ Stay on top of foreign exchange rates, so you know when it's the best time to bu
       $(document).foundation();
     </script>
     <script src="bower_components/chart.js/dist/Chart.js">
-      
+
     </script>
     <script type="text/javascript">
       var ctx = document.getElementById("myChart");
@@ -247,7 +192,7 @@ Stay on top of foreign exchange rates, so you know when it's the best time to bu
             pointHitRadius: 10,
             data: [65, 59, 80, 81, 56, 55, 40],
             spanGaps: false,
-            
+
         }
     ]
 },
