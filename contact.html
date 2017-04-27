@@ -31,7 +31,7 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li class="">
-                        <a href="#">About</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li class="active">
                       <a href="contact.html">Contact</a>
@@ -41,10 +41,24 @@
         </nav>
     </header>
     <div class="container-fluid innerAbout">
-        <div class="row">
-
+        <div class="">
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+        <div style='overflow:hidden;height:440px;width:100%;max-width:100%;'>
+        <div id='gmap_canvas' style='height:440px;width:100%;max-width:100%;'></div>
+        <div>
+          <small>
+            <a href="http://embedgooglemaps.com">embed google maps</a>
+          </small>
+        </div>
+        <div>
+        <small><a href="https://buywebsitetrafficreviews.org/trafficwebsites/">know more about the best traffic sellers!</a></small>
+        </div>
+        <style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
+        <script type='text/javascript'>
+        function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(51.5073509,-0.12775829999998223),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.5073509,-0.12775829999998223)});infowindow = new google.maps.InfoWindow({content:'<strong>Asia Exchange</strong><br>London, United Kingdom<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
         </div>
     </div>
+
     <main class="contact-wrap container-fluid">
       <div class="row">
         <div class="large-12 columns">
@@ -91,9 +105,10 @@
 
       </div>
       <div class="row">
-        <div class="large-12 columns">
+        <div class="large-5 columns contact-details">
           <h4>
-            Address
+            <i class="step fi-marker size-16"></i>
+            <span>Address</span>
           </h4>
           <address>
             <span>
@@ -112,14 +127,52 @@
               USA
             </span>
           </address>
-          <div class="large-12 columns">
-              <label>
-                Email
+          <div class="large-12 columns mail-content">
+              <label class="left">
+                <i class="step fi-mail size-16"></i>
               </label>
-              <p>
-              user@untitled.tld
+              <p class="left">
+              <strong>user@untitled.tld</strong>
               </p>
           </div>
+        </div>
+        <div class="large-7 columns">
+        <div class="large-12 columns give-ring">
+          <h4>
+        <i class="step fi-telephone size-16"></i>
+        <span>Give us ring</span>
+          </h4>
+        
+        <div class="large-11 columns">  
+<svg xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+width="500px" height="70px" viewBox="0 0 70 70"
+xml:lang="en">
+
+<style type="text/css">
+text {
+font-size: 50px;
+font-family: sans-serif;
+font-weight: bold;
+}
+</style>
+<pattern id="thick-stripes" width="100%" height="40%"
+viewBox="0 0 2 2" preserveAspectRatio="none">
+<rect width="2" height="1" fill="indigo" />
+<rect width="2" height="1" y="1"
+fill="royalBlue" />
+</pattern>
+<pattern id="thin-stripes" height="12.5%"
+xlink:href="#thick-stripes" />
+<text x="150%" y="1em" dx="-10" fill="url(#thick-stripes)"
+text-anchor="end">088-882-4562</text>
+<!-- <text x="50%" y="1em" dx="10" fill="url(#thin-stripes)"
+text-anchor="start">Stripy</text> -->
+</svg>
+</div>
+</div>
+
+
         </div>
       </div>
     </main>
@@ -161,52 +214,8 @@
     <script>
       $(document).foundation();
     </script>
-    <script src="bower_components/chart.js/dist/Chart.js">
-
-    </script>
-    <script type="text/javascript">
-      var ctx = document.getElementById("myChart");
-      var myChart = new Chart(ctx, {
-    type: 'line',
-     data : {
-    labels: ["January", "February", "March", "April", "May", "June", "July"],
-    datasets: [
-        {
-            label: "My First dataset",
-            fill: false,
-            lineTension: 0.1,
-            backgroundColor: "rgba(75,192,192,0.4)",
-            borderColor: "#9bb2e1",
-            borderCapStyle: 'butt',
-            borderDash: [],
-            borderDashOffset: 0.0,
-            borderJoinStyle: 'miter',
-            pointBorderColor: "#5052b5",
-            pointBackgroundColor: "#fff",
-            pointBorderWidth: 5,
-            pointHoverRadius: 10,
-            pointHoverBackgroundColor: "#fff",
-            pointHoverBorderColor: "#5052b5",
-            pointHoverBorderWidth: 1,
-            pointRadius: 5,
-            pointHitRadius: 10,
-            data: [65, 59, 80, 81, 56, 55, 40],
-            spanGaps: false,
-
-        }
-    ]
-},
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true
-                }
-            }]
-        }
-    }
-});
-    </script>
+    
+    
 
 
 </body>

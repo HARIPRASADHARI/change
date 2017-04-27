@@ -8205,6 +8205,20 @@ th.hide-for-touch {
   }
 }
 /*--------------Compass--------*/
+/*------------Global--------------*/
+input[type="text"]:-moz-placeholder, input[type="email"]:-moz-placeholder, textarea:-moz-placeholder {
+  color: #bfbfbf !important;
+}
+input[type="text"]::-moz-placeholder, input[type="email"]::-moz-placeholder, textarea::-moz-placeholder {
+  color: #bfbfbf !important;
+}
+input[type="text"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #bfbfbf !important;
+}
+input[type="text"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #bfbfbf !important;
+}
+
 header.main-menu {
   max-width: 100%;
   height: 100px;
@@ -8423,6 +8437,9 @@ header.main-menu .top-bar {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
+}
+.wrapper .price-detail strong, .wrapper .price-detail i {
+  color: #fff !important;
 }
 
 .support {
@@ -8653,6 +8670,34 @@ footer .social-connect li:first-child {
 .contact-wrap {
   padding: 4em 4em 2em 4em;
 }
+.contact-wrap > .row:nth-child(2) {
+  padding-top: 2em;
+}
+.contact-wrap .contact-details h4 span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -1em;
+}
+.contact-wrap .contact-details address span {
+  display: inline-block;
+  margin: 0 0.35em;
+}
+.contact-wrap .mail-content {
+  padding: 0 !important;
+}
+.contact-wrap .mail-content p {
+  margin-bottom: 0;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+}
+.contact-wrap .step {
+  font-size: 1.75em;
+  display: inline-block;
+  color: royalblue;
+}
+.contact-wrap .fi-mail {
+  font-size: 2.75em;
+}
 .contact-wrap h4 {
   color: #434b56;
 }
@@ -8664,6 +8709,10 @@ footer .social-connect li:first-child {
   font-size: 1.25em;
   margin-bottom: 1em;
   display: block;
+}
+.contact-wrap textarea {
+  line-height: 1.75em !important;
+  padding: 2em  !important;
 }
 .contact-wrap input, .contact-wrap textarea {
   box-shadow: none !important;
@@ -8677,20 +8726,19 @@ footer .social-connect li:first-child {
   transition: border-color 0.2s ease;
   background-color: transparent;
   border: solid 1px !important;
-  border-top-color: #5e42a6;
-  border-right-color: #5e42a6;
-  border-bottom-color: #5e42a6;
-  border-left-color: #5e42a6;
-  border-color: #5e42a6 !important;
+  border-top-color: #676d79;
+  border-right-color: #676d79;
+  border-bottom-color: #676d79;
+  border-left-color: #676d79;
+  border-color: #676d79 !important;
   border-radius: 3px;
-  color: #5e42a6 !important;
-  cursor: pointer;
+  color: #676d79 !important;
   display: inline-block;
   font-size: 1em;
   font-weight: bold;
   height: calc(3.75em + 2px);
-  letter-spacing: 2px;
-  line-height: 3.75em;
+  letter-spacing: 1px;
+  line-height: 1em;
   outline: 0;
   padding: 0 3.75em;
   position: relative;
@@ -8714,11 +8762,11 @@ footer .social-connect li:first-child {
   transition: border-color 0.2s ease;
   background-color: transparent;
   border: solid 1px !important;
-  border-top-color: #5e42a6;
-  border-right-color: #5e42a6;
-  border-bottom-color: #5e42a6;
-  border-left-color: #5e42a6;
-  border-color: #5e42a6 !important;
+  border-top-color: #676d79;
+  border-right-color: #676d79;
+  border-bottom-color: #676d79;
+  border-left-color: #676d79;
+  border-color: #676d79 !important;
   border-radius: 3px;
   color: #676d79;
   cursor: pointer;
@@ -8765,28 +8813,34 @@ footer .social-connect li:first-child {
   -ms-transform: scale(1);
   transform: scale(1);
 }
+.contact-wrap .give-ring h4 span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -1em;
+}
 
 /*---------------------About-------------------------*/
 .about-detail-header {
   background-color: #5e42a6;
   height: 120px !important;
-}
-
-.innerAbout {
   background-attachment: fixed;
-  background-color: #272833;
-  background-image: url("../images/banner.jpg");
+  background-image: url(../images/intro.svg);
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  min-height: calc(90vh - 2.5em);
+}
+
+.innerAbout {
+  padding: 7.5em 0em 0em 0em;
 }
 
 .about-detail {
   padding: 5em 5em 3em 5em;
 }
 .about-detail > section {
-  box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 10px #999999;
+  -webkit-box-shadow: 0 0 10px #999999;
+  box-shadow: 0 0 10px #999999;
 }
 .about-detail .row > .large-12 {
   padding: 0 !important;
