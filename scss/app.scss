@@ -12,7 +12,7 @@
 @import "compass/css3/transform";
 
 /*------------Global--------------*/
-input[type="text"],input[type="email"],textarea {
+input[type="text"],input[type="email"],input[type="password"],textarea {
   @include input-placeholder {
     color: #bfbfbf !important;
   }
@@ -173,7 +173,7 @@ header {
             ;
         }
     }
-    
+
     .get-rates {
         > .button {
           -moz-appearance: none;
@@ -524,7 +524,7 @@ footer{
         font-size:1.75em;
         display:inline-block;
         color: royalblue;
-        
+
       }
   .fi-mail{
     font-size: 2.75em;
@@ -650,7 +650,7 @@ transform: scale(1);
 
   }
   .give-ring{
-    
+
       h4{
         span{
           display: inline-block;
@@ -658,7 +658,7 @@ transform: scale(1);
           margin-top: -1em;
         }
       }
-    
+
   }
 }
 
@@ -671,7 +671,7 @@ transform: scale(1);
     background-position: top right;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    
+
 }
 .innerAbout{
   // background-attachment: fixed;
@@ -845,3 +845,164 @@ img{
 }
 }
 }
+
+/*------------------------Login---------------------*/
+
+.login{
+  background-color: #5e42a6;
+      background-attachment: fixed;
+    background-image: url(../images/intro.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    header{
+      .firm-logo{
+        position: relative;
+display: block;
+img{
+  width: 50%;
+}
+&:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  z-index: -1;
+  background: #c8cccf;
+  right: -2.35em;
+}
+&:before{
+content: '';
+display: block;
+position: absolute;
+top: 50%;
+width: 100%;
+height: 1px;
+z-index: -1;
+background: #c8cccf;
+left: -2.35em;
+}
+      }
+    }
+    .row{
+      main{
+      -ms-box-shadow: 0px 30px 60px -5px rgba(0, 0, 0, 0.56);
+-webkit-box-shadow: 0px 30px 60px -5px rgba(0, 0, 0, 0.56);
+-moz-box-shadow: 0px 30px 60px -5px rgba(0, 0, 0, 0.56);
+box-shadow: 0px 30px 60px -5px rgba(0, 0, 0, 0.56);
+position: absolute;
+max-width: 400px;
+margin: 0 auto;
+width: 100%;
+padding: .5em 1.5em 1em 1.5em;
+background: #ffffff;
+border-radius: 4px;
+cursor: default;
+opacity: 0.95;
+text-align: center;
+top:50%;
+left: 50%;
+@include transform(translate(-50%,-50%));
+}
+.button{
+  padding: .65rem 3rem !important;
+  background-color: #5e42a6;
+  @include transition(all 0.3s ease-in-out);
+  &:hover{
+    background-color:lighten(#5e42a6,5%);
+  }
+}
+    }
+  .floated-label-wrapper {
+  position: relative;
+  margin: 0.8em 0;
+  input[type=text],
+  input[type=email],
+  input[type=password] {
+    margin: 1.5em 0em;
+
+    padding: 0.5em !important;
+    box-shadow: none !important;
+    &:active{
+      box-shadow: none !important;
+      background: #fff;
+    }
+    &:focus{
+      box-shadow: none !important;
+      background: #fff;
+    }
+    &:hover{
+      box-shadow: none !important;
+      background: #fff;
+    }
+  }
+  label {
+    background: $white;
+    color: #5e42a6;
+    font-size: 0.75rem;
+    font-weight: 600;
+    left: 0.75rem;
+    opacity: 0;
+    padding: 0 0.25rem;
+    position: absolute;
+    top: 2rem;
+    transition: all 0.15s ease-in;
+    z-index: -1;
+
+
+
+    &.show {
+      opacity: 1;
+      top: -0.85rem;
+      z-index: 1;
+      transition: all 0.15s ease-in;
+    }
+  }
+}
+}
+
+/*-------------------dashboard----------------*/
+
+  $include-html-table-classes: $include-html-classes;
+
+/*These control the background color for the table and even rows*/
+$table-bg: red;
+$table-even-row-bg: $snow;
+
+/* These control the table cell border style*/
+$table-border-style: solid;
+$table-border-size: 1px;
+$table-border-color: $gainsboro;
+
+/* These control the table head styles*/
+$table-head-bg: $white-smoke;
+$table-head-font-size: rem-calc(14);
+$table-head-font-color: $jet;
+$table-head-font-weight: $font-weight-bold;
+$table-head-padding: rem-calc(8 10 10);
+
+/* These control the table foot styles*/
+$table-foot-bg: $table-head-bg;
+$table-foot-font-size: $table-head-font-size;
+$table-foot-font-color: $table-head-font-color;
+$table-foot-font-weight: $table-head-font-weight;
+$table-foot-padding: $table-head-padding;
+
+/* These control the caption*/
+$table-caption-bg: transparent;
+$table-caption-font-color: $table-head-font-color;
+$table-caption-font-size: rem-calc(16);
+$table-caption-font-weight: bold;
+
+/* These control the row padding and font styles*/
+$table-row-padding: rem-calc(9 10);
+$table-row-font-size: rem-calc(14);
+$table-row-font-color: $jet;
+$table-line-height: rem-calc(18);
+
+/* These are for controlling the display and margin of tables*/
+$table-display: table-cell;
+$table-margin-bottom: rem-calc(20);
+
